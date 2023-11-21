@@ -1,0 +1,3 @@
+gcloud run deploy --tag gcr.io/stately-moon-405301/index --platform managed
+
+--tag gcr.io/stately-moon-405301/index
