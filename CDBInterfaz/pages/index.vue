@@ -21,7 +21,6 @@
             <v-file-input
               v-model="basura"
               @change="image_preview"
-              :rules="[rules.imagen.required]"
               accept="image/*"
               placeholder="Basura a clasificar"
               label="Basura a clasificar"
@@ -86,7 +85,8 @@
                 <v-spacer/>
               </v-toolbar>
               <v-card-text class="text-center">
-                <v-img :src="imagePreview" :max-height="300" :max-width="300" class="mx-auto my-auto"/>
+                <v-img :src="imagePreview" :max-height="400" :max-width="400"
+                       class="mx-auto my-auto" style="border-radius:15px;" />
               </v-card-text>
             </v-card>
           </v-col>
